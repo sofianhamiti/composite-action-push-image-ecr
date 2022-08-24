@@ -26,8 +26,8 @@ runs:
     with:
       role-to-assume: ${{inputs.iam_role}}
       aws-region: ${{inputs.aws_region}}
-      role-skip-session-tagging: true
-      role-duration-seconds: 1200
+#       role-skip-session-tagging: true
+#       role-duration-seconds: 1200
 
   - name: Login to ECR
     id: login-ecr
