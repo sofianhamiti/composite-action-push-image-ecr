@@ -17,6 +17,9 @@ inputs:
   iam_role:
     required: true
 
+permissions:
+  id-token: write
+  contents: read
 
 runs:
   using: composite
